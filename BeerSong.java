@@ -1,14 +1,17 @@
 class BeerSong{
  public static void main(String[] args){
-  int count = 100;
+  
   final String bottles1 = " Bottles of beer on the wall, ";
   final String bottles2 = " Bottles of beer \n Take one down, pass it around, ";
-  System.out.print(Ninety_Nine_Bottles_of_Beer());
- }
- public String Ninety_Nine_Bottles_of_Beer(){
-  count = count-1;
-  if (count==1){return ""+count+" Bottle of beer on the wall, "+count+" Bottle of beer \n Take one down pass it around there are no more bottles of beer on the wall";
- }
-  else( return "\n"+count+bottles1+count+bottles2+(count-1)+bottles1;)
-
-}
+  Ninety_Nine_Bottles_of_Beer();
+ }//main
+ public void Ninety_Nine_Bottles_of_Beer(){
+  for(int i=99;i>0;i--){
+ 
+   if (i==1){System.out.print(""+i+" Bottle of beer on the wall, "+i+" Bottle of beer \n Take one down pass it around there are no more bottles of beer on the wall");
+   }//if
+   System.out.print(""+i+bottles1+i+bottles2+i+bottles1+"");
+  }//for
+  
+ }//99bottles method
+}//class
